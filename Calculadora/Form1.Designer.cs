@@ -49,6 +49,7 @@
             this.btnDivisao = new System.Windows.Forms.Button();
             this.btnMultiplicacao = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnCE = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtDisplay
@@ -294,20 +295,33 @@
             // 
             this.btnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpar.Location = new System.Drawing.Point(131, 105);
+            this.btnLimpar.Location = new System.Drawing.Point(196, 111);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(126, 55);
+            this.btnLimpar.Size = new System.Drawing.Size(150, 55);
             this.btnLimpar.TabIndex = 21;
             this.btnLimpar.Text = "C";
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // btnCE
+            // 
+            this.btnCE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnCE.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCE.Location = new System.Drawing.Point(40, 111);
+            this.btnCE.Name = "btnCE";
+            this.btnCE.Size = new System.Drawing.Size(150, 55);
+            this.btnCE.TabIndex = 22;
+            this.btnCE.Text = "CE";
+            this.btnCE.UseVisualStyleBackColor = false;
+            this.btnCE.Click += new System.EventHandler(this.btnCE_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.ClientSize = new System.Drawing.Size(367, 394);
+            this.ClientSize = new System.Drawing.Size(365, 399);
+            this.Controls.Add(this.btnCE);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnMultiplicacao);
             this.Controls.Add(this.btnDivisao);
@@ -359,6 +373,7 @@
         private System.Windows.Forms.Button btnDivisao;
         private System.Windows.Forms.Button btnMultiplicacao;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Button btnCE;
     }
 }
 

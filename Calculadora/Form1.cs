@@ -16,6 +16,9 @@ namespace Calculadora
         double val2;
         string op;
         double resultado;
+        double p;
+
+
 
         public Form1()
         {
@@ -112,10 +115,24 @@ namespace Calculadora
             //op = "%";
             //val1 = Convert.ToDouble(txtDisplay.Text);
             ////txtDisplay.Clear();
-            double c = double.Parse(txtDisplay.Text);
+            //double c = double.Parse(txtDisplay.Text);
             
-            c = c / 100;
-            txtDisplay.Text = c.ToString();
+            //c = c / 100;
+            //txtDisplay.Text = c.ToString();
+            if(val1 == 0)
+            {
+                val1 = Convert.ToDouble(txtDisplay.Text);
+                Double p = val1 / 100;
+                txtDisplay.Text = p.ToString();
+                    
+           }
+            else
+            {
+                val2 = Convert.ToDouble(txtDisplay.Text);
+                Double p = val2 / 100;
+                Double resultado = val1 * p;
+                txtDisplay.Text = resultado.ToString();
+            }
 
             
         }
@@ -186,6 +203,17 @@ namespace Calculadora
             //resultado = Math.Pow(n, n1);
 
             //txtDisplay.Text = resultado.ToString();
+
+        }
+
+        private void btnCE_Click(object sender, EventArgs e)
+        {
+            val1 = 0;
+            val2 = 0;
+            resultado = 0;
+            p = 0;
+            txtDisplay.Clear();
+            
 
         }
     }
